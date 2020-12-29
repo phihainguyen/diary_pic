@@ -12,7 +12,6 @@ app.use(bodyParser.json({ limit: '30mb', extended: true }));
 app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }));
 
 const CONNECTION_URL =
-	'mongodb+srv://phihai93:XPuGD29kv7ViJkQ@cluster0.sghdr.mongodb.net/<dbname>?retryWrites=true&w=majority';
 const PORT = process.env.PORT || 5000;
 
 mongoose

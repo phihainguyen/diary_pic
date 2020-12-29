@@ -9,15 +9,17 @@ import { useDispatch } from 'react-redux';
 const Form = () => {
 	const [ postData, setPostData ] = useState({ creator: '', title: '', message: '', tags: '', selectedFile: '' });
 	const classes = useStyles();
-
 	const dispatch = useDispatch();
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
+		console.log(postData);
 		dispatch(createPost(postData));
 	};
 
-	const clear = () => {};
+	const clear = () => {
+		console.log('workng');
+	};
 
 	return (
 		<Paper className={classes.paper}>

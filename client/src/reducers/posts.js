@@ -3,6 +3,7 @@ export default (posts = [], action) => {
 		case 'FETCH_ALL':
 			return action.payload;
 		case 'CREATE':
+			console.log('reducer working');
 			return [ ...posts, action.payload ];
 		default:
 			return posts;
